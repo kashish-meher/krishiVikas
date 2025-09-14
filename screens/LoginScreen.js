@@ -17,13 +17,15 @@ export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
+   const handleLogin = () => {
+    // This part stays the same to check if the fields are filled
     if (!email || !password) {
       Alert.alert("Error", "Please fill in all fields.");
       return;
     }
-    Alert.alert("Success", "Logged in successfully! (Dummy)");
-    console.log("Email:", email, "Password:", password);
+    
+    // This is the new line that navigates to the Roadmap screen
+    navigation.navigate("Roadmap");
   };
 
   const handleForgotPassword = () => {
