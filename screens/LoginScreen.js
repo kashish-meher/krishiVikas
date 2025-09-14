@@ -11,7 +11,7 @@ import {
 
 import { SafeAreaView } from "react-native-safe-area-context"
 
-import profileIcon from "../assets/krishiLOGO.png"; // Correct path
+import profileIcon from "../assets/krishiLOGO.jpg"; // Correct path
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");

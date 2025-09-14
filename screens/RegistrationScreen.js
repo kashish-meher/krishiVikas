@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import profileIcon from "../assets/krishiLOGO.png"; // ✅ Corrected path
+import profileIcon from "../assets/krishiLOGO.jpg"; // ✅ Corrected path
 
 export default function RegistrationScreen() {
   const [formData, setFormData] = useState({
@@ -74,7 +74,7 @@ export default function RegistrationScreen() {
         <TextInput style={styles.input} placeholder="Farm Size (Acres)"
           value={formData.farmSize} onChangeText={(text) => handleChange("farmSize", text)}
           keyboardType="numeric" />
-        <TextInput style={styles.input} placeholder="Crop They Grow"
+        <TextInput style={styles.input} placeholder="Crop You Grow"
           value={formData.crop} onChangeText={(text) => handleChange("crop", text)} />
         <TextInput style={styles.input} placeholder="Password"
           value={formData.password} onChangeText={(text) => handleChange("password", text)}

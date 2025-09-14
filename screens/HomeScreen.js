@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, SafeAreaView, Image } from "react-native";
-import profileIcon from "../assets/krishiLOGO.png";
+import profileIcon from "../assets/krishiLOGO.jpg";
 
 export default function HomeScreen({ navigation }) {
   const stats = [
